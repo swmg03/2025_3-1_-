@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <table border="1">
+        <tr>
+          <th colspan="2">동아리 회원 가입</th>
+        </tr>
+        <tr>
+          <th><label for="id">아이디</label></th>
+          <td>
+            <input type="text" id="id" placeholder="아이디를 입력하세요" />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="pw">패스워드</label>
+          </th>
+          <td>
+            <input
+              type="password"
+              id="pw"
+              placeholder="패스워드를 입력하세요"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <th><label for="mail">메일주소</label></th>
+          <td><input type="email" id="mail" /></td>
+        </tr>
+        <tr>
+          <th><label for="tel">연락처</label></th>
+          <td><input type="tel" id="tel" /></td>
+        </tr>
+        <tr>
+          <th>학년</th>
+          <td><input type="number" name="grade" />학년</td>
+        </tr>
+        <tr>
+          <th>학기</th>
+          <td>
+            <input type="radio" name="semester" value="1" />1학기
+            <input type="radio" name="semester" value="2" />2학기
+            <input type="radio" name="semester" value="3" />계절학기
+          </td>
+        </tr>
+        <tr>
+          <th>전공</th>
+          <td>
+            <select name="major">
+              <option value="BigData">빅데이터</option>
+              <option value="SmartIoT">스마트IoT</option>
+              <option value="ContentIt">콘텐츠IT</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>관심분야</th>
+          <td>
+            <input type="checkbox" name="interest" value="frontend" />프런트앤드
+            <input type="checkbox" name="interest" value="backend" />백엔드
+            <input type="checkbox" name="interest" value="fullstack" />풀스택
+            <input
+              type="checkbox"
+              name="interest"
+              value="framework"
+            />프레임워크
+          </td>
+        </tr>
+        <tr>
+          <th>자기소개서</th>
+          <td><input type="file" /></td>
+        </tr>
+        <tr>
+          <th>생년월일</th>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            <input type="submit" value="가입" />
+            <input type="reset" value="재작성" />
+          </th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
